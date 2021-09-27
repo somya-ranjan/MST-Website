@@ -1,0 +1,254 @@
+/* <---------------For Destop-----------------> */
+
+/* <---------------For Tablet-----------------> */
+@media (min-width: 700px) and (max-width: 1200px) {
+  html {
+    font-size: 60.25%;
+  }
+  nav {
+    padding: 1rem 1rem;
+  }
+  .courses h1 {
+    font-size: 4rem;
+    margin-bottom: -5rem;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .course_col {
+    flex-basis: 40rem;
+    border: 0.2rem solid red;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.3);
+    margin-top: 10rem;
+  }
+  .course_col h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .course_col p {
+    font-size: 3rem;
+  }
+  /* <!-- --------------Facilities---------------- --> */
+  .facilities h1 {
+    font-size: 4rem;
+    margin-bottom: -5rem;
+  }
+  .facilities_col {
+    margin-top: 10rem;
+  }
+  .facilities_col img {
+    height: 70vh;
+    width: 100vw;
+  }
+  /* <!-- --------------publicution---------------- --> */
+  .publicution h1 {
+    font-size: 4rem;
+  }
+  /* <!-- --------------Tectimonials---------------- --> */
+  .tectimonials h1 {
+    font-size: 5rem;
+    margin-bottom: -5rem;
+  }
+  .tectimonials p {
+    font-size: 3rem;
+  }
+  .tectimonials_col {
+    margin-top: 10rem;
+  }
+
+  /* <!-- --------------callToSection---------------- --> */
+
+  .cta h1 {
+    font-size: 4rem;
+    padding: 40rem 0 10rem;
+  }
+  /* <!-- --------------Footer---------------- --> */
+
+  .footer p {
+    font-size: 2rem;
+    width: 70vw;
+  }
+  /* <!-- -----------------------------------About Us Page-------------------------------- --> */
+  .sub_header h1 {
+    font-size: 5rem;
+    margin-top: 20rem;
+  }
+  .about_col img {
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+  }
+
+  /* <!-- -----------------------------------Course Page-------------------------------- --> */
+  .comment_box {
+    width: 100%;
+  }
+  ::placeholder {
+    font-size: 2rem;
+    margin: auto;
+  }
+  .comment_form input,
+  .comment_form textarea {
+    padding: 2rem;
+  }
+  .comment_box button {
+    font-size: 2rem;
+  }
+
+  /* <!-- -----------------------------------Achivment Page-------------------------------- --> */
+  .alumin h2 {
+    margin-bottom: -3rem;
+  }
+  .alumin_col {
+    margin-top: 5rem;
+  }
+}
+
+/* <---------------For Mobile-----------------> */
+@media (max-width: 700px) {
+  html {
+    font-size: 35%;
+  }
+
+  .header img {
+    width: 25rem;
+  }
+  .head_text h1 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+  .head_text p {
+    font-size: 3rem;
+  }
+  nav {
+    padding: 1rem 1.5rem;
+    animation: none;
+    visibility: visible;
+  }
+  .nav_links ul {
+    padding: 2rem;
+  }
+  .nav_links ul li {
+    display: block;
+    text-align: center;
+    border-bottom: 0.1rem solid #ffffff;
+  }
+  .nav_links ul li::after {
+    display: none;
+  }
+  .nav_links ul li a {
+    font-size: 3.2rem;
+  }
+  .nav_links {
+    position: absolute;
+    background: rgb(2, 0, 0);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+  }
+  nav .fas {
+    display: block;
+    font-size: 4rem;
+    color: #ffffff;
+    margin: 1rem 2rem;
+    text-align: left;
+  }
+
+  /* <!-- --------------Course---------------- --> */
+  .courses h1 {
+    font-size: 5rem;
+  }
+  .row {
+    flex-direction: column;
+    margin-top: -7rem;
+  }
+  .course_col {
+    flex-basis: 40rem;
+    margin-top: 10rem;
+  }
+  .course_col h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .course_col p {
+    font-size: 3rem;
+  }
+
+  /* <!-- --------------Facilities---------------- --> */
+  .facilities h1 {
+    font-size: 5rem;
+  }
+  .facilities p {
+    font-size: 3rem;
+    margin-bottom: -5rem;
+  }
+  .facilities_col {
+    margin-top: 10rem;
+  }
+  .facilities_col img {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  /* <!-- --------------publicution---------------- --> */
+  .publicution h1 {
+    font-size: 5rem;
+  }
+  .publicution p {
+    font-size: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  /* <!-- --------------Tectimonials---------------- --> */
+  .tectimonials h1 {
+    font-size: 5rem;
+    margin-bottom: 15rem;
+  }
+  .tectimonials p {
+    font-size: 3rem;
+    padding-bottom: 5rem;
+  }
+  .tectimonials_col {
+    margin-bottom: 10rem;
+  }
+
+  /* <!-- --------------callToSection---------------- --> */
+
+  .cta h1 {
+    font-size: 4rem;
+    padding: 40rem 0 10rem;
+  }
+
+  /* <!-- --------------Footer---------------- --> */
+
+  .footer p {
+    width: 70vw;
+  }
+
+  /* <!-- -----------------------------------About Us Page-------------------------------- --> */
+  .sub_header h1 {
+    font-size: 5rem;
+    margin-top: 20rem;
+    /* animation: none;
+        visibility: visible; */
+  }
+  .about_col img {
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+  }
+
+  /* <!-- -----------------------------------Course Page-------------------------------- --> */
+  .comment_box {
+    width: 100%;
+  }
+
+  /* <!-- -----------------------------------Achivment Page-------------------------------- --> */
+  .alumin h2 {
+    margin-bottom: 5rem;
+  }
+  .alumin_col {
+    margin-top: 5rem;
+  }
+}

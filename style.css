@@ -1,0 +1,554 @@
+@keyframes feder {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  50% {
+    opacity: 0.5;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("img/b.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  animation: feder 1s linear;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+.nav_scroled{
+  background-color: #180b52;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: ease-in-out .5s;
+}
+nav img {
+  width: 25rem;
+}
+/* .nav_links{
+    flex: 1;
+    text-align: right;
+} */
+.nav_links ul li {
+  list-style: none;
+  text-align: right;
+  display: inline-block;
+  padding: 1rem 1rem;
+}
+.nav_links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.nav_links ul li::after {
+  content: "";
+  width: 0%;
+  height: 0.3rem;
+  background-color: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav_links ul li:hover::after {
+  width: 100%;
+}
+.head_text {
+  width: 90vw;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.head_text h1 {
+  font-size: 7rem;
+  text-transform: capitalize;
+  animation: feder 1s linear 1.2s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+.head_text p {
+  margin: 1rem 0 7rem;
+  font-size: 3rem;
+  animation: feder 1s linear 1.5s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+.head_text a {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1.7rem 4rem;
+  border: 0.2rem solid #ffffff;
+  border-radius: 2.5rem;
+  animation: feder 1s linear 1.8s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  position: relative;
+}
+.head_text a:hover {
+  border: 0.2rem solid red;
+  background-color: red;
+  transition: 1s;
+}
+nav .fas {
+  display: none;
+}
+
+/* <!-- --------------Course---------------- --> */
+.courses {
+  width: 85vw;
+  margin: auto;
+  text-align: center;
+  margin-top: 6rem;
+}
+.courses h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course_col {
+  flex-basis: 37rem;
+  background-color: #fff3f3;
+  border-radius: 1rem;
+  padding: 2rem 1.2rem;
+  margin-top: 3rem;
+  border: 1px solid red;
+  transition: 0.5s;
+}
+.course_col h2 {
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+.course_col p {
+  text-align: justify;
+  color: rgb(73, 73, 73);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+.course_col:hover {
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.3);
+}
+
+/* <!-- --------------Facilities---------------- --> */
+
+.facilities {
+  width: 85vw;
+  margin: auto;
+  text-align: center;
+}
+.facilities h1 {
+  font-size: 3rem;
+  margin: 5rem;
+}
+.facilities_col {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.facilities_col img {
+  height: 70vh;
+  width: 25vw;
+  border-radius: 1rem;
+}
+.layer h2 {
+  width: 100%;
+  font-size: 5rem;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.7s;
+}
+.layer:hover {
+  background: rgba(0, 204, 255, 0.5);
+}
+.layer:hover h2 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* <!-- --------------publicution---------------- --> */
+.publicution {
+  margin: auto;
+  text-align: center;
+}
+.publicution h1 {
+  font-size: 3rem;
+  margin: 5rem;
+}
+.single-logo img {
+  background-position: center;
+  height: 90px;
+}
+.section-padding {
+  padding: 60px 0;
+}
+.brand-carousel {
+  background: aliceblue;
+  margin-top: 1%;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 4%;
+}
+.owl-dot {
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: #878787 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.owl-dot.active {
+  background-color: #000 !important;
+}
+
+/* <!-- --------------Tectimonials---------------- --> */
+.tectimonials {
+  width: 80vw;
+  margin: auto;
+  padding-top: 5rem;
+  text-align: center;
+}
+.tectimonials h1 {
+  font-size: 3rem;
+  margin: 0 0 5rem;
+}
+.tectimonials_col {
+  flex-basis: 44%;
+  border-radius: 2rem;
+  background: rgb(243, 215, 59);
+  color: #ffffff;
+  padding: 4rem 2rem;
+  border: 0.1rem solid red;
+  transition: 0.5s;
+}
+.tectimonials_col .fas {
+  font-size: 10rem;
+}
+.tectimonials_col p {
+  font-size: 2rem;
+  text-align: justify;
+  color: #000;
+  padding: 3rem;
+}
+.tectimonials_col h2 {
+  /* color: red; */
+  font-size: 3rem;
+}
+.star .fas,
+.far {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+.tectimonials_col:hover {
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.3);
+  transform: scale(0.93);
+}
+
+/* <!-- --------------callToSection---------------- --> */
+.cta {
+  margin: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/c.jpg") !important;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin-top: 10rem;
+  text-align: center;
+}
+.cta h1 {
+  color: #ffffff;
+  font-size: 7.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 25rem 0 5rem;
+}
+.cta a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 5rem;
+  border: 0.3rem solid #ffffff;
+  border-radius: 4.5rem;
+  padding: 2rem;
+  transition: 0.7s;
+}
+.cta a:hover {
+  background: red;
+  border: 0.3rem solid red;
+}
+
+/* <!-- --------------Footer---------------- --> */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+}
+.footer h3 {
+  font-size: 2rem;
+  margin: 4rem 0 2rem;
+}
+.footer p {
+  font-size: 1.5rem;
+  width: 40vw;
+  margin: auto;
+  padding-bottom: 1.5rem;
+}
+.icon .fab {
+  font-size: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+.footer h2 {
+  font-size: 1.2rem;
+}
+.footer a img {
+  width: 5rem;
+  margin: 1rem 0 -2rem 0.5rem;
+}
+.icon .fab:nth-child(1):hover {
+  color: rgb(25, 0, 255);
+}
+.icon .fab:nth-child(2):hover {
+  color: #1da1f2;
+}
+.icon .fab:nth-child(3):hover {
+  color: rgb(247, 43, 43);
+}
+.icon .fab:nth-child(4):hover {
+  color: #0077b5;
+}
+
+/* <!-- -----------------------------------About Us Page-------------------------------- --> */
+.sub_header {
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("img/a.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+.sub_header h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-top: 10rem;
+  animation: feder 1s linear 1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+.about_us {
+  width: 85vw;
+  margin: auto;
+  padding: 10rem 0 5rem 0;
+}
+.about_col {
+  flex-basis: 40%;
+}
+.about_col img {
+  width: 100%;
+}
+.about_col h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.about_col p {
+  font-size: 1.6rem;
+  text-align: justify;
+  margin: 2rem 0 4rem 0;
+}
+.about_col a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: red;
+  border: 0.2rem solid red;
+  padding: 1rem 2rem;
+  transition: 0.7s;
+}
+.about_col a:hover {
+  color: #ffffff;
+  border: 0.2rem solid red;
+  background: red;
+}
+
+/* <!-- -----------------------------------Achivment Page-------------------------------- --> */
+.alumin {
+  width: 85vw;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+.alumin h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 5rem 0 2rem 0;
+}
+.alumin_col {
+  flex-basis: 25vw;
+  background: rgb(243, 215, 59);
+  color: #ffffff;
+  border: 0.2rem solid red;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  transition: 0.5s;
+}
+.alumin_col .fas {
+  font-size: 10rem;
+}
+.alumin_col h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 1rem auto;
+}
+.alumin_col h4 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 1rem auto;
+}
+.alumin_col h5 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 1rem auto;
+}
+.alumin_col:hover {
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.3);
+  transform: scale(0.93);
+}
+/* <!-- -----------------------------------Course Page-------------------------------- --> */
+.comment_box {
+  width: 60vw;
+  border: 0.4rem solid rgba(204, 204, 204, 0.438);
+  margin: 5rem auto;
+  padding: 1rem 2rem;
+}
+.comment_box h3 {
+  font-size: 2.5rem;
+  text-align: left;
+}
+.comment_form input,
+.comment_form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+  resize: none;
+}
+.comment_box button {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+}
+.comment_box button:hover {
+  border: 0.2rem solid red;
+  color: #ffffff;
+  background: red;
+}
+
+/* <!-- -----------------------------------Contact Page-------------------------------- --> */
+.location {
+  width: 85vw;
+  margin: 10rem auto;
+}
+.location iframe {
+  width: 100%;
+}
+.contact_us {
+  width: 85vw;
+  margin: auto;
+}
+.contact_col {
+  flex-basis: 45%;
+}
+.contact_col div {
+  display: flex;
+  align-items: right;
+  margin-bottom: 7rem;
+}
+.contact_col div .fas,
+.contact_col div .far {
+  font-size: 5rem;
+  color: red;
+  margin-right: 3rem;
+}
+.contact_col div h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+  font-weight: 400;
+}
+.contact_col div p {
+  font-size: 1.3rem;
+}
+.contact_col input,
+.contact_col textarea {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 1.7rem;
+  outline: none;
+  border: 0.2rem solid rgb(102, 99, 99);
+  resize: none;
+}
+.contact_col button {
+  padding: 1rem 2rem;
+  transition: 0.5s;
+}
+.contact_col button:hover {
+  border: 0.2rem solid red;
+  color: #ffffff;
+  background: red;
+}
